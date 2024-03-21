@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active 
+{
+  text-decoration: underline;
+}
+
+.modal
+{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.595);
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent
+{
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+.modal.active
+{
+  text-decoration: none;
+  pointer-events: all;
+  opacity: 1;
+}
